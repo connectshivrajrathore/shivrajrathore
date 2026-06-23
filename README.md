@@ -1,114 +1,35 @@
-# Shivraj Singh Rathore – Portfolio & Consulting Portal
+# Shivraj Singh Rathore
 
-A professional portfolio and consulting hub built to showcase dual expertise as a **Full-Stack QA Engineer & Business Analyst**. The site features interactive case studies, service descriptions, an integrated calendar booking system (Cal.com), and a secure contact portal.
+**Full-Stack QA Engineer & Business Analyst**
 
----
-
-## 🛠️ Tech Stack & Key Resources
-
-This project is built using modern, lightweight, and performant web technologies:
-
-- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router, Static HTML Export)
-- **Language**: [TypeScript](https://www.typescriptlang.org/) for static typing and code reliability
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) for high-performance utility-first styling with the modern `@theme` structure
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) for fluid, hardware-accelerated transitions
-- **Icons**: [Lucide React](https://lucide.dev/) for clean, accessible vector iconography
-- **Scheduling**: [Cal.com](https://cal.com/) for seamless, client-side embedded calendar scheduling
-- **Form Submissions**: [Web3Forms](https://web3forms.com/) for serverless, secure contact form submissions
+[![Website](https://img.shields.io/badge/Live_Portfolio-connectshivrajrathore.github.io-blue?style=for-the-badge)](https://connectshivrajrathore.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shivraj_Rathore-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shivraj-rathore/)
+[![Email](https://img.shields.io/badge/Email-connect.shivrajrathore@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:connect.shivrajrathore@gmail.com)
 
 ---
 
-## 🛡️ Security Implementation & QA Audit Controls
+## 👋 About Me
 
-The repository has undergone a strict security audit and contains built-in safeguards to defend against common web vulnerabilities:
+I am a hybrid technology professional bridging the gap between business requirements, product design, and software quality. With over 7 years of experience spanning Test Automation, Agile Business Analysis, and Enterprise Systems validation, I specialize in ensuring that the software we build actually solves the right business problems—and does so flawlessly.
 
-1. **Content Security Policy (CSP)**: Injected via `<meta>` tag to strictly restrict source origins (`default-src 'self'`), script execution context, and prevent iframe embedding (`frame-ancestors 'none'`).
-2. **Contact Form Rate-Limiter**: Client-side state-based throttling limits users to 1 submission every 30 seconds per form to prevent bot flooding.
-3. **Anti-Spam Honeypots**: Hidden field traps on contact forms screen out automated bots without impacting genuine users.
-4. **Input Sanitization & Constraints**: Maximum character lengths (`maxLength`) and strict regex formatting validated client-side before sending data.
-5. **Safe Error Handling**: Prevents raw API errors from leaking to the DOM, presenting only clean, user-friendly messages.
-6. **X-Content-Type-Options**: Explicitly configured to prevent browser MIME-type sniffing (`nosniff`).
-7. **Referrer-Policy**: Set to `strict-origin-when-cross-origin` to avoid leaking sensitive data in headers.
-8. **Secure External Links**: All outbound links use `rel="noopener noreferrer"` to eliminate target window hijacking risks.
+My dual-focus allows me to:
+- **Understand the "Why"**: Translating complex stakeholder requirements into actionable, crystal-clear user stories.
+- **Ensure the "How"**: Designing robust automated testing frameworks to catch regressions before they reach production.
 
----
+## 🚀 About This Repository
 
-## 📂 Project Structure
+This repository hosts the source code for my personal portfolio and consulting hub. More than just a resume, this application serves as a living demonstration of my commitment to quality, security, and modern web development standards.
 
-```text
-├── public/                  # Static assets (Resume, Favicon, OG Images)
-├── src/
-│   ├── app/                 # Next.js App Router Pages
-│   │   ├── about/           # About page & professional competencies
-│   │   ├── blog/            # Under Construction blog area
-│   │   ├── contact/         # Booking and contact form
-│   │   ├── experience/      # Role timeline (QA + BA duties)
-│   │   ├── freelance/       # Freelance/consulting enquiry form
-│   │   ├── projects/        # Enterprise and active case studies
-│   │   ├── services/        # Detailed consultancy services list
-│   │   ├── skills/          # Interactive professional skills matrix
-│   │   ├── layout.tsx       # Root layout containing CSP/meta config
-│   │   └── page.tsx         # Hero page
-│   ├── components/          # Reusable UI elements
-│   │   ├── layout/          # Footer and mobile-friendly Navbar
-│   │   └── ui/              # Badges, Buttons, Cards, and decorative elements
-│   └── lib/
-│       └── constants.ts     # Single source of truth for URLs, email, and social profiles
-```
+### Technical Highlights
+- **Modern Architecture**: Built on **Next.js 15+** with the App Router and static HTML export.
+- **Type Safety**: Strictly typed with **TypeScript** to eliminate runtime errors.
+- **Enterprise Security**: Features a strict Content Security Policy (CSP), client-side rate-limiting, and anti-spam honeypots.
+- **Performance Optimized**: Achieves near-perfect Lighthouse scores through static generation and optimized Tailwind CSS v4 styling.
 
----
+Feel free to explore the code to see how I structure, document, and secure modern web applications. 
 
-## 🚀 Getting Started Locally
+## 📬 Let's Connect
 
-### Prerequisites
+Looking to optimize your QA processes, streamline your business requirements, or build a bulletproof application? 
 
-Ensure you have [Node.js](https://nodejs.org/) (v18 or higher) installed.
-
-### Setup Instructions
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/connectshivrajrathore/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Configure Environment Variables**:
-   Update constants directly inside [constants.ts](file:///d:/Shivraj/Projects/ShivrajRathore/portfolio/src/lib/constants.ts):
-   * `SITE_CONFIG.siteUrl` - Your deployed production domain.
-   * `SOCIAL_LINKS.calcom` - Your Cal.com booking handle.
-   * `WEB3FORMS_ACCESS_KEY` - Your Web3Forms API key.
-
-4. **Run the Development Server**:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) to see the application running.
-
----
-
-## 📦 Deployment (GitHub Pages)
-
-The project is configured for static export (`output: 'export'`). 
-
-### Build Pipeline
-
-Run the production build:
-```bash
-npm run build
-```
-This generates a static production build inside the `out/` directory.
-
-### Deploying to GitHub Pages
-
-The project uses GitHub Actions to automate deployments from the `main` branch. 
-
-To deploy manually or inspect the pipeline:
-1. Ensure `next.config.ts` (or `next.config.js`) has `output: 'export'` and `images.unoptimized: true` configured.
-2. Push your code to the `main` branch.
-3. The `.github/workflows/deploy.yml` workflow (if configured) will automatically compile, optimize, and publish the static bundle directly to your GitHub Pages repository.
-# shivrajrathore
+You can reach me directly through my [Live Portfolio](https://connectshivrajrathore.github.io) or via [LinkedIn](https://www.linkedin.com/in/shivraj-rathore/).
