@@ -60,7 +60,7 @@ export function Navbar() {
                 SR
               </text>
             </svg>
-            <span>Shivraj</span>
+            <span>Shivraj Singh Rathore</span>
           </Link>
           
           {/* Desktop navigation */}
