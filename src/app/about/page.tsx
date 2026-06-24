@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Download } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   const competencies = [
@@ -27,24 +28,49 @@ export default function About() {
   ];
 
   return (
-    <div className="container mx-auto px-6 max-w-4xl py-12">
+    <div className="container mx-auto px-6 max-w-5xl py-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">About Me</h1>
         
-        <div className="prose prose-invert max-w-none text-lg text-[var(--color-on-surface-variant)] space-y-6 mb-16">
-          <p>
-            I am a versatile <strong>Full-Stack QA Engineer & Business Analyst</strong> with over 7 years of experience bridging the gap between business stakeholders, development teams, and high-quality software delivery. My unique dual skillset allows me to translate complex business requirements into clear technical specifications, map process workflows, and design robust quality assurance strategies.
-          </p>
-          <p>
-            In my Business Analyst capacity, I collaborate with stakeholders to gather requirements, write detailed user stories, define clear acceptance criteria, and facilitate User Acceptance Testing (UAT). In my QA capacity, I design and execute automation suites, validate complex APIs, and maintain high testing standards across web applications, mobile platforms, and enterprise CRM systems like Salesforce.
-          </p>
-          <p>
-            By aligning business logic with engineering execution, I ensure that the software we build not only works flawlessly under the hood but also delivers maximum value and meets user needs. I view quality and business analysis as complementary disciplines essential to delivering successful products.
-          </p>
+        <div className="flex flex-col md:flex-row gap-10 mb-16 items-start">
+          <div className="w-full md:w-1/3 shrink-0 flex flex-col items-center">
+            <div className="w-full aspect-square relative rounded-2xl overflow-hidden border border-white/10 mb-6 bg-white/5">
+              <Image 
+                src="/profile.png" 
+                alt="Shivraj Singh Rathore" 
+                fill 
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+            <a 
+              href="/CV.pdf" 
+              download="Shivraj_Rathore_CV.pdf"
+              className="w-full flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[var(--color-gradient-start)] to-[var(--color-gradient-end)] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-opacity"
+            >
+              <Download className="w-4 h-4" />
+              Download CV
+            </a>
+            <p className="text-xs text-[var(--color-on-surface-variant)] mt-3 text-center">
+              Please ensure you place your CV.pdf in the 'public' folder!
+            </p>
+          </div>
+
+          <div className="w-full md:w-2/3 prose prose-invert max-w-none text-lg text-[var(--color-on-surface-variant)] space-y-6">
+            <p>
+              I am a versatile <strong>Full-Stack QA Engineer & Business Analyst</strong> with over 7 years of experience bridging the gap between business stakeholders, development teams, and high-quality software delivery. My unique dual skillset allows me to translate complex business requirements into clear technical specifications, map process workflows, and design robust quality assurance strategies.
+            </p>
+            <p>
+              In my Business Analyst capacity, I collaborate with stakeholders to gather requirements, write detailed user stories, define clear acceptance criteria, and facilitate User Acceptance Testing (UAT). In my QA capacity, I design and execute automation suites, validate complex APIs, and maintain high testing standards across web applications, mobile platforms, and enterprise CRM systems like Salesforce.
+            </p>
+            <p>
+              By aligning business logic with engineering execution, I ensure that the software we build not only works flawlessly under the hood but also delivers maximum value and meets user needs. I view quality and business analysis as complementary disciplines essential to delivering successful products.
+            </p>
+          </div>
         </div>
       </motion.div>
 
