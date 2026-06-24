@@ -43,7 +43,7 @@ export default function About() {
                 src="/shivrajrathore/profile.png" 
                 alt="Shivraj Singh Rathore" 
                 fill 
-                className="object-cover"
+                className="object-cover object-top"
                 unoptimized
               />
             </div>
