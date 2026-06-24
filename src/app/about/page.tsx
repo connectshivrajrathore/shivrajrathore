@@ -40,7 +40,7 @@ export default function About() {
           <div className="w-full md:w-1/3 shrink-0 flex flex-col items-center">
             <div className="w-full aspect-square relative rounded-2xl overflow-hidden border border-white/10 mb-6 bg-white/5">
               <Image 
-                src="/profile.png" 
+                src="/shivrajrathore/profile.png" 
                 alt="Shivraj Singh Rathore" 
                 fill 
                 className="object-cover"
@@ -48,7 +48,7 @@ export default function About() {
               />
             </div>
             <a 
-              href="/CV.pdf" 
+              href="/shivrajrathore/CV.pdf" 
               download="Shivraj_Rathore_CV.pdf"
               className="w-full flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[var(--color-gradient-start)] to-[var(--color-gradient-end)] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-opacity"
             >
