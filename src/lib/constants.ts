@@ -29,7 +29,7 @@ export const SOCIAL_LINKS = {
 } as const;
 
 /** Web3Forms public access key, loaded from environment variables. */
-export const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "";
+export const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "7983fc52-dfd6-4814-aec7-b354102092dd";
 
 /** Resume PDF path (relative to /public). Place your CV at public/resume.pdf */
 export const RESUME_PDF_PATH = "/resume.pdf";
