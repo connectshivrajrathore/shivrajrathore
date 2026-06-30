@@ -2,7 +2,7 @@
 
 **Full-Stack QA Engineer & Business Analyst**
 
-[![Website](https://img.shields.io/badge/Live_Portfolio-connectshivrajrathore.github.io-blue?style=for-the-badge)](https://connectshivrajrathore.github.io/shivrajrathore/)
+[![Website](https://img.shields.io/badge/Live_Portfolio-Shivraj_Rathore-blue?style=for-the-badge)](https://connectshivrajrathore.github.io/shivrajrathore/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shivraj_Rathore-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shivraj-rathore/)
 
