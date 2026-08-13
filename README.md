@@ -5,7 +5,6 @@
 [![Website](https://img.shields.io/badge/Live_Portfolio-Shivraj_Rathore-blue?style=for-the-badge)](https://connectshivrajrathore.github.io/shivrajrathore/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shivraj_Rathore-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shivraj-rathore/)
-
 [![Email](https://img.shields.io/badge/Email-connect.shivrajrathore@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:connect.shivrajrathore@gmail.com)
 
 ---
