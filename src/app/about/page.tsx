@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { CheckCircle2, Download } from "lucide-react";
 import Image from "next/image";
+import { RESUME_PDF_PATH } from "@/lib/constants";
 
 export default function About() {
   const competencies = [
@@ -48,16 +49,13 @@ export default function About() {
               />
             </div>
             <a 
-              href="/shivrajrathore/CV.pdf" 
-              download="Shivraj_Rathore_CV.pdf"
+              href={RESUME_PDF_PATH} 
+              download="Shivraj_Singh_Rathore_CV.pdf"
               className="w-full flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[var(--color-gradient-start)] to-[var(--color-gradient-end)] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-opacity"
             >
               <Download className="w-4 h-4" />
               Download CV
             </a>
-            <p className="text-xs text-[var(--color-on-surface-variant)] mt-3 text-center">
-              Please ensure you place your CV.pdf in the 'public' folder!
-            </p>
           </div>
 
           <div className="w-full md:w-2/3 prose prose-invert max-w-none text-lg text-[var(--color-on-surface-variant)] space-y-6">
