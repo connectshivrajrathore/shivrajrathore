@@ -2,7 +2,8 @@
 
 **Full-Stack QA Engineer & Business Analyst**
 
-[![Website](https://img.shields.io/badge/Live_Portfolio-connectshivrajrathore.github.io-blue?style=for-the-badge)](https://connectshivrajrathore.github.io)
+[![Website](https://img.shields.io/badge/Live_Portfolio-Shivraj_Rathore-blue?style=for-the-badge)](https://connectshivrajrathore.github.io/shivrajrathore/)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shivraj_Rathore-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shivraj-rathore/)
 [![Email](https://img.shields.io/badge/Email-connect.shivrajrathore@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:connect.shivrajrathore@gmail.com)
 
@@ -32,4 +33,4 @@ Feel free to explore the code to see how I structure, document, and secure moder
 
 Looking to optimize your QA processes, streamline your business requirements, or build a bulletproof application? 
 
-You can reach me directly through my [Live Portfolio](https://connectshivrajrathore.github.io) or via [LinkedIn](https://www.linkedin.com/in/shivraj-rathore/).
+You can reach me directly through my [Live Portfolio](https://connectshivrajrathore.github.io/shivrajrathore/) or via [LinkedIn](https://www.linkedin.com/in/shivraj-rathore/).
