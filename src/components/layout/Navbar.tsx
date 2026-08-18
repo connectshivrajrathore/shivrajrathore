@@ -13,6 +13,7 @@ const navItems = [
   { name: "Skills", path: "/skills" },
   { name: "Projects", path: "/projects" },
   { name: "Services", path: "/services" },
+  { name: "CV", path: "/cv" },
 ];
 
 export function Navbar() {

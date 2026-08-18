@@ -68,7 +68,7 @@ export default function Home() {
       <section className="py-12 border-y border-white/5 mb-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bold text-white mb-1">5+</div>
+            <div className="text-3xl font-bold text-white mb-1">6+</div>
             <div className="text-sm text-[var(--color-on-surface-variant)] uppercase tracking-wider">Years Experience</div>
           </div>
           <div>
