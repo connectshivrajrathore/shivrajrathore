@@ -28,7 +28,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6"
         >
-          QA Engineer • Business Analyst <br className="hidden md:block" />
+          QA Engineer • Business Analyst • Salesforce <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-gradient-start)] to-[var(--color-gradient-end)]">
             AI-Powered Automation Architect
           </span>
@@ -40,8 +40,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-[var(--color-on-surface-variant)] max-w-2xl mb-10"
         >
-          Bridging business vision and technical execution through Quality Engineering, Business Analysis, and Intelligent Automation. I specialize in translating complex requirements into actionable solutions, designing scalable test automation frameworks, optimizing workflows, and leveraging AI to accelerate delivery. My focus is helping teams reduce risk, improve quality, and release software with confidence.
-
+          Results-oriented Hybrid QA Engineer with around 5 years of experience in software testing across Web, Mobile, and Salesforce CRM platforms (Sales Cloud, Service Cloud, CPQ). Specializing in Lead-to-Cash validation, test automation (Selenium, Playwright, Opkey), API testing, SOQL/SQL data validation, and Agentic AI testing solutions.
         </motion.p>
 
         <motion.div
@@ -58,7 +57,7 @@ export default function Home() {
           </Link>
           <Link href="/freelance">
             <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-              Hire Me
+              View & Download CV
             </Button>
           </Link>
         </motion.div>
@@ -68,7 +67,7 @@ export default function Home() {
       <section className="py-12 border-y border-white/5 mb-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bold text-white mb-1">6+</div>
+            <div className="text-3xl font-bold text-white mb-1">Around 5</div>
             <div className="text-sm text-[var(--color-on-surface-variant)] uppercase tracking-wider">Years Experience</div>
           </div>
           <div>
@@ -89,9 +88,9 @@ export default function Home() {
       {/* Core Focus Areas */}
       <section className="mb-24">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Core Focus Areas</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Core Competency Areas</h2>
           <p className="text-[var(--color-on-surface-variant)] max-w-xl">
-            Combining analytical thinking with technical execution to drive product success at every stage.
+            Delivering robust end-to-end quality assurance across enterprise Salesforce clouds, automation frameworks, and AI workflows.
           </p>
         </div>
 
@@ -101,7 +100,17 @@ export default function Home() {
               <Zap className="w-10 h-10 text-[var(--color-accent-blue)] mb-4" />
               <CardTitle>Full-Stack QA Automation</CardTitle>
               <CardDescription>
-                Scalable custom frameworks using Selenium, Playwright, and Java to validate Web, Mobile, and API applications.
+                Deep validation of Sales Cloud, Service Cloud, and CPQ Lead-to-Cash lifecycles, complex pricing rules, bundling, approvals, and SOQL data auditing.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <Zap className="w-10 h-10 text-[var(--color-accent-blue)] mb-4" />
+              <CardTitle>Test Automation & APIs</CardTitle>
+              <CardDescription>
+                Scalable test automation frameworks using Selenium WebDriver, Playwright, Opkey (No-Code), Postman (OAuth 2.0 / REST / SOAP), and CI/CD pipelines.
               </CardDescription>
             </CardHeader>
           </Card>
@@ -109,17 +118,7 @@ export default function Home() {
           <Card>
             <CardHeader>
               <Cpu className="w-10 h-10 text-[var(--color-gradient-end)] mb-4" />
-              <CardTitle>Business Analysis & UAT</CardTitle>
-              <CardDescription>
-                Requirement elicitation, process mapping, user stories creation, stakeholder management, and facilitating UAT.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <ShieldCheck className="w-10 h-10 text-[var(--color-gradient-start)] mb-4" />
-              <CardTitle>Enterprise & Salesforce Systems</CardTitle>
+              <CardTitle>AI-Powered Testing & MCP</CardTitle>
               <CardDescription>
                 End-to-end validation of complex CRM structures, Lead-to-Cash lifecycles, and CPQ business configuration rules.
               </CardDescription>

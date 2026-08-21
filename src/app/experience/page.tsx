@@ -6,29 +6,54 @@ import { Badge } from "@/components/ui/Badge";
 
 const experiences = [
   {
-    role: "QA Engineer & Consultant",
-    companyType: "Enterprise Consulting Firm",
-    duration: "Aug 2022 — Present",
-    technologies: ["Salesforce CPQ", "Requirements Analysis", "BPMN Mapping", "UAT Facilitation", "Opkey", "Postman", "SOQL"],
+    role: "Software QA Engineer",
+    company: "Metacube Software Pvt. Ltd.",
+    location: "Jaipur, Rajasthan, India",
+    duration: "June 2022 — Present",
+    technologies: [
+      "Salesforce Sales Cloud",
+      "Salesforce Service Cloud",
+      "Salesforce CPQ",
+      "SOQL",
+      "Postman (OAuth 2.0)",
+      "AI Data Enrichment",
+      "Vaani AI (Speech-to-Text)",
+      "Opkey (No-Code)",
+      "QTest",
+      "Jira",
+      "Aircall CTI",
+      "CI/CD Jenkins"
+    ],
     responsibilities: [
-      "Led end-to-end Quality Assurance and requirements alignment for enterprise CRM implementations, validating complex Lead-to-Cash, billing, and quote generation workflows.",
-      "Collaborated with business stakeholders to map business processes, draft user stories, define acceptance criteria, and formulate UAT strategies for complex Salesforce CPQ rules.",
-      "Served as the key bridge between product owners and developers for a groundbreaking AI Lead Enrichment initiative, validating speech-to-text accuracy and data integrity.",
-      "Designed and executed automation strategies by translating critical user paths into No-Code test scripts (Opkey) and managing DevOps continuous testing pipelines.",
-      "Performed deep integration and backend validation using Postman (REST/SOAP APIs, OAuth 2.0) and SOQL queries."
+      "Led QA across Salesforce Sales Cloud, Salesforce Service Cloud, and Salesforce CPQ projects, delivering end-to-end validation of key business workflows including lead management, opportunity lifecycle, case handling, billing, quote generation, and renewals.",
+      "Designed and executed complex CPQ test scenarios covering bundling, pricing rules, discount approvals, and amendment/renewal flows, while ensuring data integrity through SOQL-based backend validation.",
+      "Acted as the sole QA for an AI Data Enrichment initiative and led QA for a speech-to-text (Vaani) integration, validating AI-driven data population, transcription accuracy, and cross-system data flow.",
+      "Managed full QA lifecycle using Jira and QTest, supported CI/CD-driven regression cycles, and performed API testing via Postman with OAuth 2.0 validation.",
+      "Collaborated with developers and architects on defect resolution and CPQ configurations, validated Salesforce admin components post-deployment, tested Aircall CTI integrations, and leveraged Opkey to optimize automation and reduce regression effort."
     ]
   },
   {
-    role: "Software Test Engineer & Requirements Analyst",
-    companyType: "Healthcare Technology Solutions",
-    duration: "Feb 2019 — July 2022",
-    technologies: ["Requirements Analysis", "Java", "Selenium", "Postman", "SQL", "Agile/Scrum", "Jira"],
+    role: "Software QA Engineer",
+    company: "Software Management Applications",
+    location: "Jaipur, Rajasthan, India",
+    duration: "December 2020 — June 2022",
+    technologies: [
+      "Web Testing",
+      "Mobile QA (Android/iOS)",
+      "REST APIs",
+      "Postman",
+      "SQL Validation",
+      "Jira",
+      "Agile/Scrum",
+      "Test Plans & Matrices",
+      "UAT"
+    ],
     responsibilities: [
-      "Facilitated requirements elicitation sessions with product owners to draft functional specifications and user acceptance criteria for healthcare modules.",
-      "Led end-to-end QA validation across patient management, billing, and scheduling workflows, ensuring strict GDPR compliance and functional correctness.",
-      "Created and maintained traceability matrices to map business requirements to test cases and defects, ensuring 100% test coverage.",
-      "Verified microservices integration via Postman API testing, confirming data schemas and payloads against business requirements.",
-      "Collaborated closely with developers and stakeholders during Agile sprints, running defect triage meetings and coordinating sprint reviews."
+      "Led end-to-end QA for a vehicle software management application, covering functional, UI, API, and backend testing across modules like vehicle management, user management, service scheduling, billing, and third-party integrations.",
+      "Designed and executed comprehensive test plans, performed cross-browser and device UI validation for consistent UX, and conducted REST API testing using Postman to verify payloads, authentication, and data accuracy.",
+      "Ensured backend integrity through SQL-based validation, identifying discrepancies between UI and database layers.",
+      "Collaborated within Agile sprints, managing defects via Jira, and executed regression, smoke, sanity, and UAT cycles before releases, while maintaining traceability matrices and detailed test summary reports.",
+      "Gained exposure to CRM workflows, including customer data management, service interactions, and validation of customer-related processes and integrations."
     ]
   }
 ];
@@ -42,11 +67,9 @@ export default function Experience() {
         transition={{ duration: 0.5 }}
         className="mb-12"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Experience</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Professional Experience</h1>
         <p className="text-lg text-[var(--color-on-surface-variant)]">
-          A track record of engineering quality into complex enterprise systems. 
-          <br className="hidden md:block" />
-          <span className="text-sm opacity-70">(Client and employer names have been anonymized to respect confidentiality agreements).</span>
+          Around 6 years of proven quality engineering excellence across enterprise Salesforce CRM ecosystems, automation frameworks, and AI workflows.
         </p>
       </motion.div>
 
@@ -64,10 +87,13 @@ export default function Experience() {
                   <div>
                     <CardTitle className="text-2xl mb-1">{exp.role}</CardTitle>
                     <div className="text-[var(--color-accent-blue)] font-medium">
-                      {exp.companyType}
+                      {exp.company}
                     </div>
                   </div>
-                  <Badge variant="outline" className="w-fit">{exp.duration}</Badge>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Badge variant="outline" className="w-fit">{exp.duration}</Badge>
+                    <Badge variant="secondary" className="w-fit text-xs bg-white/5">{exp.location}</Badge>
+                  </div>
                 </div>
                 
                 <div className="flex flex-wrap gap-2 mt-4">
