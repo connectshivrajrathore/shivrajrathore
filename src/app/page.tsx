@@ -7,7 +7,26 @@ import { Badge } from "@/components/ui/Badge";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/Card";
 import { ArrowRight, CheckCircle, Code2, Cpu, ShieldCheck, Zap } from "lucide-react";
 
+const EXPERIENCE_START_DATE = new Date(2021, 10, 1);
+
+function getExperienceDuration() {
+  const today = new Date();
+  const startYear = EXPERIENCE_START_DATE.getFullYear();
+  const startMonth = EXPERIENCE_START_DATE.getMonth();
+  
+  let totalMonths = (today.getFullYear() - startYear) * 12 + (today.getMonth() - startMonth);
+  
+  if (today.getDate() < EXPERIENCE_START_DATE.getDate()) {
+    totalMonths -= 1;
+  }
+  
+  const years = Math.round(totalMonths / 12);
+  return `${years}+`;
+}
+
 export default function Home() {
+  const experienceDuration = getExperienceDuration();
+
   return (
     <div className="container mx-auto px-6 max-w-6xl">
       {/* Hero Section */}
@@ -40,7 +59,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-[var(--color-on-surface-variant)] max-w-2xl mb-10"
         >
-          Results-oriented Hybrid QA Engineer with around 5 years of experience in software testing across Web, Mobile, and Salesforce CRM platforms (Sales Cloud, Service Cloud, CPQ). Specializing in Lead-to-Cash validation, test automation (Selenium, Playwright, Opkey), API testing, SOQL/SQL data validation, and Agentic AI testing solutions.
+          Results-oriented Hybrid QA Engineer with {experienceDuration} years of experience in software testing across Web, Mobile, and Salesforce CRM platforms (Sales Cloud, Service Cloud, CPQ). Specializing in Lead-to-Cash validation, test automation (Selenium, Playwright, Opkey), API testing, SOQL/SQL data validation, and Agentic AI testing solutions.
         </motion.p>
 
         <motion.div
@@ -67,7 +86,7 @@ export default function Home() {
       <section className="py-12 border-y border-white/5 mb-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bold text-white mb-1">Around 5</div>
+            <div className="text-3xl font-bold text-white mb-1">{experienceDuration}</div>
             <div className="text-sm text-[var(--color-on-surface-variant)] uppercase tracking-wider">Years Experience</div>
           </div>
           <div>
