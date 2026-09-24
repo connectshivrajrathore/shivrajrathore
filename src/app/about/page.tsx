@@ -9,14 +9,14 @@ import { RESUME_PDF_PATH } from "@/lib/constants";
 
 export default function About() {
   const competencies = [
-    "Requirements Gathering & Analysis",
-    "Business Process Mapping (BPMN)",
-    "User Story Writing & Backlog Grooming",
-    "User Acceptance Testing (UAT) Lead",
-    "Test Automation (Selenium, Playwright)",
-    "Salesforce CPQ & Enterprise CRM",
-    "API Validation (Postman, REST/SOAP)",
-    "Agile / Scrum Methodologies"
+    "Salesforce Sales Cloud, Service Cloud & CPQ",
+    "Lead-to-Quote (L2Q) & Quote-to-Cash (Q2C)",
+    "Selenium WebDriver (Java) & Playwright",
+    "Postman API Testing (REST, SOAP, OAuth 2.0)",
+    "SOQL & SQL Backend Data Validation",
+    "AI Data Enrichment & Speech AI (Vaani) QA",
+    "Agentic AI Workflows & MCP Integrations",
+    "CI/CD Pipelines (Jenkins, Git) & Agile/Scrum"
   ];
 
   const certifications = [
@@ -60,13 +60,13 @@ export default function About() {
 
           <div className="w-full md:w-2/3 prose prose-invert max-w-none text-lg text-[var(--color-on-surface-variant)] space-y-6">
             <p>
-              I am a versatile <strong>Full-Stack QA Engineer & Business Analyst</strong> with over 7 years of experience bridging the gap between business stakeholders, development teams, and high-quality software delivery. My unique dual skillset allows me to translate complex business requirements into clear technical specifications, map process workflows, and design robust quality assurance strategies.
+              I am a results-oriented <strong>Hybrid QA Engineer</strong> with around 6 years of experience across Web, Mobile, and Salesforce CRM platforms (Sales Cloud, Service Cloud, CPQ). I specialize in functional, non-functional, API, AI-assisted, and end-to-end testing using tools including Selenium, Playwright, Postman, Opkey, Workbench, QTest, and Jira.
             </p>
             <p>
-              In my Business Analyst capacity, I collaborate with stakeholders to gather requirements, write detailed user stories, define clear acceptance criteria, and facilitate User Acceptance Testing (UAT). In my QA capacity, I design and execute automation suites, validate complex APIs, and maintain high testing standards across web applications, mobile platforms, and enterprise CRM systems like Salesforce.
+              With a proven track record across Salesforce Lead-to-Cash implementations, I validate complex business workflows spanning Lead Capture, Opportunity Creation, Product Configuration, Quote Generation, CPQ Pricing Engines, Discount Approvals, Bundling, Contract Amendments, Billing, and Payments. I ensure data integrity through rigorous SOQL/SQL backend validations.
             </p>
             <p>
-              By aligning business logic with engineering execution, I ensure that the software we build not only works flawlessly under the hood but also delivers maximum value and meets user needs. I view quality and business analysis as complementary disciplines essential to delivering successful products.
+              I actively leverage modern AI engineering tools — including ChatGPT, Claude, Gemini, Cursor, OpenAI Codex, MCP-enabled workflows, and custom AI agents — to build end-to-end automation frameworks, optimize testing cycles, and accelerate high-quality software delivery.
             </p>
           </div>
         </div>

@@ -51,8 +51,8 @@ export default function CVPage() {
   const quickStats = [
     {
       label: "Experience",
-      value: "6+ Years",
-      detail: "Full-Stack QA & Salesforce Systems",
+      value: "Around 6 Yrs",
+      detail: "Web, Mobile & Salesforce CRM Platforms",
       icon: Briefcase,
       color: "from-blue-500/20 to-indigo-500/20",
       accent: "text-blue-400",
@@ -74,9 +74,9 @@ export default function CVPage() {
       accent: "text-purple-400",
     },
     {
-      label: "AI-Powered QE",
-      value: "Agentic QA",
-      detail: "LLM Testing, MCP & Voice AI Integrations",
+      label: "AI-Powered Testing",
+      value: "Agentic QE",
+      detail: "MCP Workflows, AI Agents & LLM Testing",
       icon: Sparkles,
       color: "from-emerald-500/20 to-teal-500/20",
       accent: "text-emerald-400",
@@ -86,32 +86,57 @@ export default function CVPage() {
   const skillCategories = [
     { id: "all", label: "All Skills" },
     { id: "salesforce", label: "Salesforce & CPQ" },
-    { id: "automation", label: "Automation & Tools" },
+    { id: "automation", label: "Automation & CI/CD" },
     { id: "ai", label: "AI & Modern QE" },
-    { id: "api", label: "API & Databases" },
+    { id: "api_data", label: "API, SOQL & SQL" },
+    { id: "domain", label: "Domain & Process" },
   ];
 
   const skillsData = [
-    { name: "Salesforce CPQ & Pricing Logic", category: "salesforce", highlight: true },
+    // Salesforce & CPQ
+    { name: "Salesforce CPQ & Pricing Engine", category: "salesforce", highlight: true },
     { name: "Sales Cloud & Service Cloud", category: "salesforce", highlight: true },
+    { name: "Experience Cloud & Other Clouds", category: "salesforce", highlight: false },
     { name: "Lead-to-Cash (L2Q / Q2C)", category: "salesforce", highlight: true },
-    { name: "Quote Generation & Approvals", category: "salesforce", highlight: false },
-    { name: "Bundling & Discount Rules", category: "salesforce", highlight: false },
-    { name: "Salesforce Inspector & Workbench", category: "salesforce", highlight: false },
+    { name: "Product Bundling & Discount Rules", category: "salesforce", highlight: true },
+    { name: "Approval Workflows & Amendments", category: "salesforce", highlight: false },
+    { name: "Salesforce Workbench & Inspector", category: "salesforce", highlight: true },
+    { name: "Developer Console & Setup Audit Trail", category: "salesforce", highlight: false },
+    { name: "Data Loader & SOQL Builder", category: "salesforce", highlight: false },
+
+    // Automation & CI/CD
     { name: "Selenium WebDriver (Java)", category: "automation", highlight: true },
     { name: "Playwright Automation", category: "automation", highlight: true },
     { name: "Opkey (No-Code Automation)", category: "automation", highlight: true },
-    { name: "Postman API Testing (OAuth 2.0)", category: "api", highlight: true },
-    { name: "SOQL & SQL Data Validation", category: "api", highlight: true },
-    { name: "REST & SOAP APIs", category: "api", highlight: false },
-    { name: "AI Data Enrichment QA", category: "ai", highlight: true },
-    { name: "Speech-to-Text AI (Vaani / NLP)", category: "ai", highlight: true },
-    { name: "Agentic AI & MCP Workflows", category: "ai", highlight: true },
-    { name: "Cursor / Codex / LLM Prompt QE", category: "ai", highlight: false },
-    { name: "Jira & QTest Test Lifecycle", category: "automation", highlight: false },
-    { name: "CI/CD & Jenkins Pipelines", category: "automation", highlight: false },
-    { name: "UAT & Agile/Scrum Sprints", category: "automation", highlight: false },
-    { name: "Cross-Browser & Mobile QA", category: "automation", highlight: false },
+    { name: "CI/CD Pipeline Integration (Jenkins/Git)", category: "automation", highlight: true },
+    { name: "Git & GitHub Version Control", category: "automation", highlight: false },
+    { name: "QTest, Jira & TestRail", category: "automation", highlight: false },
+    { name: "Defect Lifecycle Management", category: "automation", highlight: false },
+    { name: "Cross-Browser & Mobile QA (iOS/Android)", category: "automation", highlight: false },
+
+    // AI & Modern QE
+    { name: "AI-Assisted Test Optimization", category: "ai", highlight: true },
+    { name: "Agentic AI Workflows & AI Agents", category: "ai", highlight: true },
+    { name: "MCP (Model Context Protocol) Integrations", category: "ai", highlight: true },
+    { name: "AI Data Enrichment Validation", category: "ai", highlight: true },
+    { name: "Speech-to-Text AI (Vaani NLP QA)", category: "ai", highlight: true },
+    { name: "ChatGPT, Claude, Gemini & Cursor", category: "ai", highlight: false },
+    { name: "OpenAI Codex & AI Coding Models", category: "ai", highlight: false },
+
+    // API & Data
+    { name: "Postman API Testing (OAuth 2.0)", category: "api_data", highlight: true },
+    { name: "REST APIs & SOAP Web Services", category: "api_data", highlight: true },
+    { name: "JSON & XML Payload Validation", category: "api_data", highlight: false },
+    { name: "SOQL Backend Validation", category: "api_data", highlight: true },
+    { name: "SQL Database Integrity Testing", category: "api_data", highlight: true },
+
+    // Domain & Process
+    { name: "Lead Capture & Qualification", category: "domain", highlight: false },
+    { name: "Billing, Invoicing & Payments", category: "domain", highlight: true },
+    { name: "Healthcare Management (GDPR)", category: "domain", highlight: false },
+    { name: "Agile, Scrum & Kanban", category: "domain", highlight: false },
+    { name: "V-Model & BDD Methodologies", category: "domain", highlight: false },
+    { name: "Aircall CTI Telephony Integration", category: "domain", highlight: false },
   ];
 
   const filteredSkills = activeCategory === "all" 
@@ -123,83 +148,94 @@ export default function CVPage() {
       role: "Software QA Engineer",
       company: "Metacube Software Pvt. Ltd.",
       period: "June 2022 — Present",
-      location: "Jaipur, India",
-      description: "Leading end-to-end Quality Assurance across enterprise Salesforce CRM (Sales Cloud, Service Cloud, CPQ) and modern AI initiatives.",
+      location: "Jaipur, Rajasthan, India",
+      description: "Leading end-to-end QA across Salesforce Sales Cloud, Service Cloud, CPQ implementations, and cutting-edge AI integrations.",
       highlights: [
-        "Led QA across Salesforce Sales Cloud, Service Cloud, and Salesforce CPQ projects, validating complete Lead-to-Opportunity, Opportunity-to-Quote, and Quote-to-Cash business workflows.",
-        "Designed and executed complex CPQ test matrices covering product bundling, configuration attributes, custom pricing engines, discount approval workflows, and contract amendment/renewal flows.",
-        "Sole QA Lead for an AI Data Enrichment initiative and Speech-to-Text (Vaani AI) integration — validated NLP accuracy, field mapping logic, and CRM record auto-population.",
-        "Engineered robust API test suites in Postman with OAuth 2.0 token authentication and performed backend data validation using SOQL and SQL.",
-        "Streamlined regression testing via Opkey no-code automation and CI/CD-driven test executions in Jira and QTest.",
-        "Validated Aircall CTI telephony integration including call logging, screen-pops, task creation, and analytics reporting."
+        "Led QA across Salesforce Sales Cloud, Salesforce Service Cloud, and Salesforce CPQ projects, delivering end-to-end validation of key business workflows including lead management, opportunity lifecycle, case handling, billing, quote generation, and renewals.",
+        "Designed and executed complex CPQ test scenarios covering bundling, pricing rules, discount approvals, and amendment/renewal flows, while ensuring data integrity through SOQL-based backend validation.",
+        "Acted as the sole QA for an AI Data Enrichment initiative and led QA for a speech-to-text (Vaani) integration, validating AI-driven data population, transcription accuracy, and cross-system data flow.",
+        "Managed full QA lifecycle using Jira and QTest, supported CI/CD-driven regression cycles, and performed API testing via Postman with OAuth 2.0 validation.",
+        "Collaborated with developers and architects on defect resolution and CPQ configurations, validated Salesforce admin components post-deployment, tested Aircall CTI integrations, and leveraged Opkey to optimize automation and reduce regression effort."
       ],
-      technologies: ["Salesforce CPQ", "Sales Cloud", "Service Cloud", "SOQL", "Postman", "OAuth 2.0", "AI Data Enrichment", "Vaani AI", "Opkey", "Jira", "QTest", "Aircall CTI"]
+      technologies: ["Salesforce Sales Cloud", "Service Cloud", "Salesforce CPQ", "SOQL", "Postman (OAuth 2.0)", "AI Data Enrichment", "Vaani AI (Speech-to-Text)", "Opkey (No-Code)", "QTest", "Jira", "Aircall CTI", "CI/CD Jenkins"]
     },
     {
-      role: "Software Test Engineer",
-      company: "Pytosoft IT Solution",
+      role: "Software QA Engineer",
+      company: "Software Management Applications",
       period: "December 2020 — June 2022",
-      location: "Jaipur, India",
-      description: "Managed end-to-end software testing for multi-module SaaS and vehicle management platforms across web, mobile, and API layers.",
+      location: "Jaipur, Rajasthan, India",
+      description: "Led end-to-end testing for multi-module SaaS and vehicle software management platforms across web, mobile, API, and database layers.",
       highlights: [
-        "Led end-to-end QA for vehicle software management applications spanning vehicle booking, user management, service scheduling, billing, and third-party integrations.",
-        "Designed comprehensive test suites, executed functional, UI, cross-browser, cross-device, regression, smoke, and sanity cycles.",
-        "Conducted REST API testing in Postman to verify payload integrity, authentication, response codes, and data schema accuracy.",
-        "Verified database consistency and resolved data layer discrepancies through structured SQL queries.",
-        "Collaborated actively in Agile/Scrum ceremonies, sprint planning, defect triage in Jira, and release management."
+        "Led end-to-end QA for a vehicle software management application, covering functional, UI, API, and backend testing across modules like vehicle management, user management, service scheduling, billing, and third-party integrations.",
+        "Designed and executed comprehensive test plans, performed cross-browser and device UI validation for consistent UX, and conducted REST API testing using Postman to verify payloads, authentication, and data accuracy.",
+        "Ensured backend integrity through SQL-based validation, identifying discrepancies between UI and database layers.",
+        "Collaborated within Agile sprints, managing defects via Jira, and executed regression, smoke, sanity, and UAT cycles before releases, while maintaining traceability matrices and detailed test summary reports.",
+        "Gained exposure to CRM workflows, including customer data management, service interactions, and validation of customer-related processes and integrations."
       ],
-      technologies: ["Web QA", "Mobile App Testing (iOS/Android)", "REST APIs", "Postman", "SQL", "Jira", "Agile/Scrum", "Test Plans"]
+      technologies: ["Web Testing", "Mobile QA (Android/iOS)", "REST APIs", "Postman", "SQL Validation", "Jira", "Agile/Scrum", "Test Plans & Matrices", "UAT"]
     }
   ];
 
   const keyProjects = [
     {
-      title: "Core Sales CRM & CPQ Validation",
+      title: "Core Sales – CRM & CPQ",
       platform: "Salesforce Sales Cloud & CPQ",
-      summary: "End-to-end testing of complete Sales Cloud workflows from lead capture and qualification to complex CPQ pricing rules, discount approvals, contract generation, and amendment lifecycles.",
-      tags: ["Salesforce CPQ", "Pricing Engine", "Approvals", "L2Q / Q2C", "SOQL"]
+      summary: "Validated complete Sales Cloud CRM workflows: lead-to-opportunity, opportunity-to-quote, CPQ pricing, approvals, and order generation. Tested advanced CPQ features including configuration attributes, product options, price rules, discount schedules, and contract amendments.",
+      tags: ["Sales Cloud", "Salesforce CPQ", "Pricing Engine", "Approvals", "SOQL"]
     },
     {
-      title: "Vaani — Speech-to-Text AI Integration",
-      platform: "Voice AI & Salesforce Integration",
-      summary: "Served as sole QA for an AI voice transcription product; validated voice capture accuracy, NLP entity extraction, and automatic Salesforce CRM record enrichment across middleware.",
-      tags: ["Speech AI", "NLP Validation", "Middleware", "Salesforce CRM", "Data Accuracy"]
-    },
-    {
-      title: "AI-Powered Lead Enrichment Tool",
-      platform: "Salesforce Intelligence",
-      summary: "Verified data scraping and AI enrichment logic, field population rules, trigger conditions, and UI consistency within Salesforce lead and account records.",
-      tags: ["AI Enrichment", "Field Population", "Data Verification", "Lead Pipeline"]
-    },
-    {
-      title: "Billing & Payments Engine",
+      title: "Billing & Payments",
       platform: "Salesforce Service Cloud",
-      summary: "Tested end-to-end billing workflows, payment gateway integrations, automated invoice generation, and credit memo handling inside Service Cloud.",
-      tags: ["Service Cloud", "Payment Gateways", "Billing Workflows", "Invoices"]
+      summary: "Conducted functional and integration testing of billing workflows, payment gateway connections, invoice generation, and credit memo processes within Service Cloud.",
+      tags: ["Service Cloud", "Billing Workflows", "Payment Gateways", "Invoices"]
     },
     {
-      title: "Aircall CTI Telephony Integration",
-      platform: "Salesforce Telephony CTI",
-      summary: "Validated bi-directional telephony-CRM synchronization including real-time call logging, automated screen-pop triggers, task creation, and activity reporting.",
-      tags: ["CTI Integration", "Call Logging", "Screen Pops", "Task Automation"]
+      title: "Vaani – Speech-to-Text AI Integration",
+      platform: "Voice AI & Salesforce Integration",
+      summary: "Sole QA resource for AI-driven voice transcription product; built test cases for voice capture accuracy, NLP entity extraction, and Salesforce record auto-population. Validated integration touchpoints across speech engine, middleware, and Salesforce CRM objects.",
+      tags: ["Speech AI", "Vaani NLP", "Middleware", "Salesforce Objects", "Data Flow"]
     },
     {
-      title: "UK Healthcare Portal (VCP)",
-      platform: "Web & GDPR Compliance",
-      summary: "Executed functional, security, regression, and cross-browser testing for a UK healthcare application ensuring strict GDPR compliance and seamless UX.",
-      tags: ["Healthcare QA", "GDPR Compliance", "Cross-Browser", "Functional QA"]
+      title: "Lead Enrichment AI",
+      platform: "Salesforce AI Innovation",
+      summary: "Tested AI-powered lead enrichment tool — validated data accuracy, field population logic, enrichment trigger conditions, and UI consistency in Salesforce.",
+      tags: ["AI Lead Enrichment", "Data Accuracy", "Field Mapping", "CRM Validation"]
+    },
+    {
+      title: "Aircall CTI Integration with Salesforce",
+      platform: "Telephony CRM Integration",
+      summary: "Validated telephony-CRM integration including call logging, screen-pop functionality, task creation, and reporting accuracy.",
+      tags: ["Aircall CTI", "Call Logging", "Screen Pops", "Task Creation"]
+    },
+    {
+      title: "Vehicle Service & Insurance Mobile App",
+      platform: "Mobile Application (Android & iOS)",
+      summary: "Performed end-to-end mobile application testing on Android and iOS platforms, covering functional flows, UI validation, API integration tests, and regression cycles.",
+      tags: ["Android QA", "iOS QA", "Mobile API Testing", "Regression"]
+    },
+    {
+      title: "VCP Website (UK Healthcare)",
+      platform: "Web Application & Compliance",
+      summary: "Led QA for UK-based healthcare platform; executed functional, regression, and cross-browser testing to ensure GDPR-compliant data handling and user experience consistency.",
+      tags: ["UK Healthcare", "GDPR Compliance", "Cross-Browser", "Functional QA"]
     }
   ];
 
   const certifications = [
     {
-      title: "Salesforce Certified Platform Administrator",
-      issuer: "Salesforce",
-      type: "Salesforce",
+      title: "ISTQB Certified Tester – Foundation Level (CTFL)",
+      issuer: "ISTQB®",
+      type: "ISTQB",
       verified: true
     },
     {
-      title: "Salesforce Certified Platform Foundations",
+      title: "ISTQB Certified Tester – Foundation Level Agile Extension (CTFL-AT)",
+      issuer: "ISTQB®",
+      type: "ISTQB",
+      verified: true
+    },
+    {
+      title: "Salesforce Certified Associate",
       issuer: "Salesforce",
       type: "Salesforce",
       verified: true
@@ -211,21 +247,15 @@ export default function CVPage() {
       verified: true
     },
     {
-      title: "Salesforce Certified Associate",
+      title: "Salesforce Certified Platform Foundations",
       issuer: "Salesforce",
       type: "Salesforce",
       verified: true
     },
     {
-      title: "ISTQB Certified Tester – Foundation Level (CTFL)",
-      issuer: "ISTQB®",
-      type: "ISTQB",
-      verified: true
-    },
-    {
-      title: "ISTQB Certified Tester – Agile Extension (CTFL-AT)",
-      issuer: "ISTQB®",
-      type: "ISTQB",
+      title: "Salesforce Certified Platform Administrator",
+      issuer: "Salesforce",
+      type: "Salesforce",
       verified: true
     }
   ];
@@ -280,12 +310,12 @@ export default function CVPage() {
                   Shivraj Singh Rathore
                 </h1>
                 <p className="text-lg sm:text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">
-                  Full-Stack QA Engineer • Salesforce & CPQ Specialist • AI-Driven QE Architect
+                  QA Engineer | Salesforce | AI-Powered Testing
                 </p>
               </div>
 
               <p className="text-[var(--color-on-surface-variant)] text-sm sm:text-base leading-relaxed">
-                Results-oriented Hybrid Quality Engineer with <strong>~6 years of experience</strong> across Web, Mobile, and Salesforce CRM platforms (Sales Cloud, Service Cloud, CPQ). Proven expertise in Lead-to-Cash validation, complex pricing logic, test automation (Selenium, Playwright, Opkey), Postman API testing (OAuth 2.0), SOQL/SQL backend integrity, and modern Agentic AI workflows.
+                Results-oriented Hybrid QA Engineer with <strong>around 6 years of experience</strong> in software testing across Web, Mobile, and Salesforce CRM platforms (Sales Cloud, Service Cloud, CPQ). Proven expertise in Lead-to-Cash validation, CPQ pricing engines, discount approvals, test automation (Selenium, Playwright, Opkey), Postman API testing (OAuth 2.0), SOQL/SQL backend integrity, and Agentic AI testing solutions.
               </p>
 
               {/* Quick Contact Chips */}

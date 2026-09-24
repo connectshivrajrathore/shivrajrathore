@@ -6,28 +6,75 @@ import { Badge } from "@/components/ui/Badge";
 
 const skillCategories = [
   {
-    title: "Business Analysis",
-    skills: ["Requirements Elicitation", "BPMN Process Mapping", "User Stories & Backlog", "UAT Facilitation", "Gap Analysis", "Stakeholder Alignment"]
+    title: "Salesforce CRM & CPQ",
+    skills: [
+      "Sales Cloud",
+      "Service Cloud",
+      "Salesforce CPQ",
+      "Experience Cloud",
+      "Lead-to-Cash (L2Q / Q2C)",
+      "Pricing Rules & Engine",
+      "Product Bundling & Discounts",
+      "Approval Workflows"
+    ]
+  },
+  {
+    title: "Salesforce Tools & Data",
+    skills: [
+      "Salesforce Workbench",
+      "Salesforce Inspector",
+      "SOQL & SQL Validation",
+      "SOQL Builder",
+      "Developer Console",
+      "Setup Audit Trail",
+      "Data Loader"
+    ]
   },
   {
     title: "Test Automation",
-    skills: ["Selenium WebDriver", "Playwright", "Java", "No-Code (Opkey)", "Cucumber / BDD", "TestNG"]
+    skills: [
+      "Selenium WebDriver (Java)",
+      "Playwright Automation",
+      "Opkey (No-Code)",
+      "AI-Assisted Test Optimization",
+      "Cross-Browser & Mobile QA",
+      "Continuous Testing"
+    ]
   },
   {
-    title: "Salesforce Platform",
-    skills: ["Sales Cloud" , "Service Cloud" , "Experience Cloud" , "CPQ / Revenue Cloud" , "Salesforce Platform" , "AI & Intelligent Automation"]
+    title: "AI & Agentic QE",
+    skills: [
+      "Agentic AI Workflows",
+      "AI Agent Creation",
+      "MCP Servers & Integrations",
+      "AI Data Enrichment QA",
+      "Speech-to-Text (Vaani) QA",
+      "Cursor, ChatGPT & Claude",
+      "OpenAI Codex & Gemini"
+    ]
   },
   {
-    title: "API & Integration",
-    skills: ["Postman", "REST & SOAP APIs", "OAuth 2.0", "JSON / XML", "SOQL / SQL", "Webhook Validation"]
+    title: "API & Integration Testing",
+    skills: [
+      "Postman",
+      "REST APIs",
+      "SOAP Services",
+      "OAuth 2.0 Auth",
+      "JSON & XML Validation",
+      "Aircall CTI Telephony"
+    ]
   },
   {
-    title: "DevOps & CI/CD",
-    skills: ["Git & GitHub", "Jenkins", "Continuous Testing", "Release Management", "GitHub Actions"]
-  },
-  {
-    title: "Agile & Test Management",
-    skills: ["Jira & Confluence", "QTest & Zephyr", "TestRail", "Sprint Ceremonies", "Defect Management", "Traceability Matrix"]
+    title: "CI/CD & Test Management",
+    skills: [
+      "Git & GitHub",
+      "Jenkins CI/CD",
+      "QTest & Jira",
+      "Zephyr & TestRail",
+      "Defect Lifecycle",
+      "Agile, Scrum & Kanban",
+      "UAT & Exploratory Testing"
+    ]
   }
 ];
 
@@ -40,9 +87,9 @@ export default function Skills() {
         transition={{ duration: 0.5 }}
         className="mb-12 text-center md:text-left"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Technical Arsenal</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Technical Skills & Competencies</h1>
         <p className="text-lg text-[var(--color-on-surface-variant)] max-w-2xl">
-          A comprehensive toolkit bridging requirements analysis, business process alignment, test automation, and enterprise quality engineering.
+          A comprehensive breakdown of enterprise Salesforce CRM testing, modern automation frameworks, API validation, and cutting-edge Agentic AI workflows.
         </p>
       </motion.div>
 

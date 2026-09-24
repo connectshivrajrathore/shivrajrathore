@@ -7,53 +7,53 @@ import { FolderGit2, Rocket } from "lucide-react";
 
 const cvProjects = [
   {
-    title: "CRM & CPQ Validation",
+    title: "Core Sales – CRM & CPQ",
     type: "Salesforce Sales Cloud & CPQ",
-    description: "Validated complete Sales Cloud CRM workflows including lead-to-opportunity, opportunity-to-quote, CPQ pricing, approvals, and order generation.",
-    impact: "Tested advanced CPQ features including configuration attributes, product options, price rules, discount schedules, and contract amendments to ensure revenue accuracy.",
-    tech: ["Salesforce CPQ", "Sales Cloud", "Data Integrity"]
+    description: "Validated complete Sales Cloud CRM workflows: lead-to-opportunity, opportunity-to-quote, CPQ pricing, approvals, and order generation.",
+    impact: "Tested advanced CPQ features including configuration attributes, product options, price rules, discount schedules, and contract amendments to ensure pricing accuracy.",
+    tech: ["Sales Cloud", "Salesforce CPQ", "Pricing Engine", "SOQL"]
   },
   {
-    title: "Billing & Payments Engine",
+    title: "Billing & Payments",
     type: "Salesforce Service Cloud",
-    description: "Conducted functional and integration testing of billing workflows, payment gateway connections, invoice generation, and credit memo processes.",
-    impact: "Ensured seamless financial transactions and accurate invoicing across the entire Service Cloud architecture.",
-    tech: ["Service Cloud", "Integration Testing", "Payment Gateways"]
+    description: "Conducted functional and integration testing of billing workflows, payment gateway connections, invoice generation, and credit memo processes within Service Cloud.",
+    impact: "Ensured seamless financial transactions, accurate payment capture, and automated invoicing across Service Cloud.",
+    tech: ["Service Cloud", "Billing Workflows", "Payment Gateways", "Invoices"]
   },
   {
-    title: "AI Speech-to-Text & Integration",
-    type: "AI/Salesforce",
-    description: "Acted as the sole QA resource for an AI-driven voice transcription product integrated into Salesforce.",
-    impact: "Built test cases for voice capture accuracy, NLP entity extraction, and validated integration touchpoints across speech engine, middleware, and CRM objects.",
-    tech: ["Speech AI", "NLP", "Salesforce API"]
+    title: "Vaani – Speech-to-Text AI Integration",
+    type: "Voice AI & Salesforce Integration",
+    description: "Sole QA resource for an AI-driven voice transcription product integrated with Salesforce CRM.",
+    impact: "Built test cases for voice capture accuracy, NLP entity extraction, and validated integration touchpoints across speech engine, middleware, and Salesforce CRM objects.",
+    tech: ["Speech AI", "Vaani NLP", "Middleware", "Salesforce Objects"]
   },
   {
-    title: "AI Lead Enrichment",
-    type: "Salesforce AI",
-    description: "Tested an AI-powered lead enrichment tool that automatically updates incomplete records.",
-    impact: "Validated data accuracy, field population logic, enrichment trigger conditions, and UI consistency preventing large-scale data corruption.",
-    tech: ["AI", "Data Validation", "UI Consistency"]
+    title: "Lead Enrichment AI",
+    type: "Salesforce AI Innovation",
+    description: "Tested AI-powered lead enrichment tool to automate and verify data enrichment inside CRM records.",
+    impact: "Validated data accuracy, field population logic, enrichment trigger conditions, and UI consistency in Salesforce.",
+    tech: ["AI Enrichment", "Data Validation", "Field Mapping", "Salesforce CRM"]
   },
   {
-    title: "Aircall CTI - Integration",
-    type: "Salesforce Integration",
-    description: "Validated telephony-CRM integration for a high-volume call center environment.",
-    impact: "Verified call logging, screen-pop functionality, task creation, and reporting accuracy for customer service agents.",
-    tech: ["Aircall", "CTI", "Salesforce Service Cloud"]
+    title: "Aircall CTI Integration",
+    type: "Salesforce Telephony CTI",
+    description: "Validated bi-directional telephony-CRM integration for customer service and sales teams.",
+    impact: "Verified call logging, screen-pop functionality, automated task creation, and activity reporting accuracy in Salesforce.",
+    tech: ["Aircall CTI", "Call Logging", "Screen Pops", "Task Automation"]
   },
   {
-    title: "Vehicle Care Plan - Service & Insurance App",
-    type: "Mobile Application",
+    title: "Vehicle Service & Insurance Mobile App",
+    type: "Mobile Application (Android & iOS)",
     description: "Performed end-to-end mobile application testing on Android and iOS platforms.",
-    impact: "Covered functional flows, UI validation, API integration tests, and regression cycles ensuring a flawless consumer experience.",
-    tech: ["Android", "iOS", "API Testing"]
+    impact: "Covered functional flows, UI validation, API integration tests, and regression cycles ensuring seamless cross-device mobile UX.",
+    tech: ["Android QA", "iOS QA", "Mobile API Testing", "Regression"]
   },
   {
-    title: "Vehicle Care Plan - Website",
-    type: "Web Application (UK Healthcare)",
-    description: "Led QA for a UK-based healthcare platform handling sensitive patient data.",
+    title: "VCP Website (UK Healthcare)",
+    type: "Web Application & Compliance",
+    description: "Led QA for UK-based healthcare platform handling sensitive patient data.",
     impact: "Executed functional, regression, and cross-browser testing to ensure GDPR-compliant data handling and user experience consistency.",
-    tech: ["Web UI", "Cross-Browser", "GDPR Compliance"]
+    tech: ["UK Healthcare", "GDPR Compliance", "Cross-Browser", "Functional QA"]
   }
 ];
 

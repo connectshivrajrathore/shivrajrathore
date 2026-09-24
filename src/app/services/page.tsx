@@ -8,43 +8,43 @@ import { Check } from "lucide-react";
 
 const services = [
   {
-    title: "Business Analysis & Requirements",
-    description: "Eliciting, analyzing, and documenting requirements to bridge the gap between business stakeholders and engineering.",
+    title: "Salesforce CRM & CPQ Validation",
+    description: "End-to-end quality assurance across Sales Cloud, Service Cloud, and CPQ Lead-to-Cash architectures.",
     benefits: [
-      "Requirements gathering, stakeholder interviews, and workshops",
-      "Process mapping (BPMN), workflow analysis, and gap mapping",
-      "User story writing with clear Gherkin BDD acceptance criteria",
-      "UAT strategy formulation and session facilitation"
-    ]
-  },
-  {
-    title: "QA Strategy & Transformation",
-    description: "Modernize testing processes, aligning quality engineering practices with Agile and DevOps workflows.",
-    benefits: [
-      "Comprehensive test strategy and plan formulation",
-      "Agile QA adoption, sprint planning, and estimation alignment",
-      "Toolchain setup and administration (Jira, Zephyr, TestRail)",
-      "Continuous Testing and quality gate definition"
+      "Sales Cloud, Service Cloud, and CPQ business workflow validation",
+      "Product bundling, pricing rules, discount approvals, and amendments",
+      "SOQL-based backend data auditing and integrity checks",
+      "CTI (Aircall), payment gateway, and billing integration verification"
     ]
   },
   {
     title: "Full-Stack Test Automation",
-    description: "Design and implement scalable automation frameworks that reduce regression cycles by up to 80%.",
+    description: "Design and implement scalable automation frameworks that reduce regression cycles and eliminate flakiness.",
     benefits: [
-      "Custom framework engineering (Selenium, Playwright, Java)",
-      "Low-Code/No-Code test automation integration",
-      "API validation (REST/SOAP) and backend data auditing",
-      "CI/CD automation pipeline integration (Jenkins, GitHub)"
+      "Custom framework engineering using Selenium WebDriver (Java) and Playwright",
+      "Opkey No-Code test automation integration and maintenance",
+      "Cross-browser and mobile application testing (Android & iOS)",
+      "CI/CD automation pipeline integration (Jenkins, GitHub Actions)"
     ]
   },
   {
-    title: "Salesforce CRM & CPQ Auditing",
-    description: "Deep validation of complex CRM logic, Lead-to-Cash lifecycles, and business rules.",
+    title: "API & Backend Data Testing",
+    description: "Rigorous API validation ensuring robust communication between microservices, CRMs, and databases.",
     benefits: [
-      "Sales Cloud, Service Cloud, and Experience Cloud testing",
-      "CPQ product bundling, pricing, and discounting rules",
-      "SOQL-based data validation and migration audits",
-      "Cross-system integration testing (Billing, ERPs, APIs)"
+      "Comprehensive REST & SOAP API test suites built in Postman",
+      "OAuth 2.0 authentication workflows and security token validation",
+      "JSON & XML payload schema validation and response time auditing",
+      "SQL database integrity testing and discrepancy resolution"
+    ]
+  },
+  {
+    title: "AI-Assisted & Agentic QE",
+    description: "Leveraging cutting-edge AI technologies and Agentic workflows to accelerate quality engineering.",
+    benefits: [
+      "AI Data Enrichment logic, field mapping, and trigger condition QA",
+      "Speech-to-Text (Vaani AI) transcription and NLP entity validation",
+      "Agentic AI testing workflows and MCP server integrations",
+      "AI-powered test optimization, prompt engineering, and LLM evaluation"
     ]
   }
 ];
